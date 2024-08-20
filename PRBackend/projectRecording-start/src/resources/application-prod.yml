@@ -1,0 +1,13 @@
+server:
+  port: 11454
+  servlet:
+    context-path: /project-management
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:2413;DatabaseName=pm;SelectMethod=cursor
+    username: '002'
+    password: ''
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
