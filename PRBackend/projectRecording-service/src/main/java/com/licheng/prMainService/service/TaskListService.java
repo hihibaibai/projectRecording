@@ -1,13 +1,13 @@
-package com.licheng.pmMainService.service;
+package com.licheng.prMainService.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.licheng.pmLoginService.entity.User;
-import com.licheng.pmLoginService.entity.UserToken;
-import com.licheng.pmLoginService.service.UserService;
-import com.licheng.pmMainService.entity.Task;
-import com.licheng.pmMainService.mapper.TaskMapper;
+import com.licheng.prLoginService.entity.User;
+import com.licheng.prLoginService.entity.UserToken;
+import com.licheng.prLoginService.service.UserService;
+import com.licheng.prMainService.entity.Task;
+import com.licheng.prMainService.mapper.TaskMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

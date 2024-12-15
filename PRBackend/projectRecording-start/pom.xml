@@ -8,9 +8,10 @@
         <version>0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <version>0.1</version>
+    <groupId>com.licheng</groupId>
     <artifactId>projectRecording-start</artifactId>
     <name>projectRecording-start</name>
+    <version>0.1</version>
     <description>入口模块，引导工程启动以及基础配置</description>
     <dependencies>
         <dependency>
@@ -56,11 +57,6 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.licheng</groupId>
-            <artifactId>projectRecording-service</artifactId>
-            <version>0.1</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>

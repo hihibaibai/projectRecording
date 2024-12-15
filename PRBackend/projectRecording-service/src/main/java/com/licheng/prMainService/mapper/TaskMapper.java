@@ -1,7 +1,7 @@
-package com.licheng.pmMainService.mapper;
+package com.licheng.prMainService.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.licheng.pmMainService.entity.Task;
+import com.licheng.prMainService.entity.Task;
 import org.springframework.stereotype.Repository;
 
 @Repository

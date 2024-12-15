@@ -16,8 +16,8 @@
     </properties>
 
     <modules>
-        <module>projectRecording-start</module>
         <module>projectRecording-service</module>
+        <module>projectRecording-start</module>
     </modules>
 
     <dependencies>

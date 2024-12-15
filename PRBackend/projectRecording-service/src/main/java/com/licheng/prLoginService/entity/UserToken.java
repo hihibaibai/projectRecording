@@ -1,4 +1,4 @@
-package com.licheng.pmLoginService.entity;
+package com.licheng.prLoginService.entity;
 
 import lombok.Data;
 

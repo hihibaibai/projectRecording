@@ -1,11 +1,16 @@
-package com.licheng.pmMainService.controller;
+package com.licheng.prMainService.controller;
 
-import com.licheng.pmMainService.entity.Task;
-import com.licheng.pmMainService.mapper.TaskMapper;
-import com.licheng.pmMainService.service.TaskListService;
-import com.licheng.pmMainService.vo.Result;
+
+import com.licheng.prMainService.entity.Task;
+import com.licheng.prMainService.service.TaskListService;
+import com.licheng.prMainService.vo.Result;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 

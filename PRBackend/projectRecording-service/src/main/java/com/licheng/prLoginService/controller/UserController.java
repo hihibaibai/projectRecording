@@ -1,25 +1,13 @@
-package com.licheng.pmLoginService.controller;
+package com.licheng.prLoginService.controller;
 
-import com.alibaba.fastjson.JSONObject;
-import com.licheng.pmLoginService.service.UserService;
-import com.licheng.pmMainService.vo.Result;
+import com.licheng.prLoginService.service.UserService;
+import com.licheng.prMainService.vo.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import sun.misc.BASE64Decoder;
+
 
 import javax.annotation.Resource;
-import javax.crypto.Cipher;
-import javax.crypto.spec.OAEPParameterSpec;
-import javax.crypto.spec.PSource;
-import java.security.KeyFactory;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.interfaces.RSAPrivateKey;
-import java.security.interfaces.RSAPublicKey;
-import java.security.spec.MGF1ParameterSpec;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.util.Arrays;
-import java.util.Base64;
+
 
 @RestController
 @Slf4j

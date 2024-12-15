@@ -1,4 +1,4 @@
-package com.licheng.pmMainService.vo;
+package com.licheng.prMainService.vo;
 
 import lombok.Data;
 

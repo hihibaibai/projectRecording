@@ -1,12 +1,12 @@
-package com.licheng.pmLoginService.service;
+package com.licheng.prLoginService.service;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.licheng.pmLoginService.entity.User;
-import com.licheng.pmLoginService.entity.UserToken;
-import com.licheng.pmLoginService.mapper.UserMapper;
+import com.licheng.prLoginService.entity.User;
+import com.licheng.prLoginService.entity.UserToken;
+import com.licheng.prLoginService.mapper.UserMapper;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

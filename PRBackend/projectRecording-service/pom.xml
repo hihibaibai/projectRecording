@@ -8,6 +8,7 @@
         <version>0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+    <groupId>com.licheng</groupId>
     <artifactId>projectRecording-service</artifactId>
     <name>projectRecording-service</name>
     <version>0.1</version>

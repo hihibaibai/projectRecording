@@ -1,6 +1,6 @@
 package com.licheng.projectRecording;
 
-import com.licheng.pmLoginService.service.UserService;
+import com.licheng.prLoginService.service.UserService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

@@ -1,4 +1,4 @@
-package com.licheng.pmMainService.entity;
+package com.licheng.prMainService.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
