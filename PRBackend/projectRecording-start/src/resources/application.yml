@@ -1,6 +1,0 @@
-spring:
-  jackson:
-    time-zone: Asia/Shanghai # 这个是时区设置
-  profiles:
-    active: dev
-

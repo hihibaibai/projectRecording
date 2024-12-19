@@ -1,12 +1,12 @@
 import LoginHome from '@/views/LoginHome.vue';
-import TaskManagementHome from '@/views/TaskManagementHome.vue';
+import TaskRecordHome from '@/views/TaskRecordHome.vue';
 import NewUser from '@/views/NewUser.vue';
 
 export const routerMap = [
   {
     path: '/',
     name: 'home',
-    component: TaskManagementHome,
+    component: TaskRecordHome,
     // redirect: '/'
   },
   {

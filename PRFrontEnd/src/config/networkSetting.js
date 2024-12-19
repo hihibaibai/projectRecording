@@ -9,4 +9,4 @@ else {
   window._config['baseBackendDomain'] = 'localhost';
   window._config['baseBackendPort'] = '10000';
 }
-window._config['contextPath'] = '/project-management';
+window._config['contextPath'] = '/project-recording';

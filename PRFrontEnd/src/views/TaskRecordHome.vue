@@ -2,7 +2,7 @@
   <div class="background">
     <div class="navBar">
 <!--      <button @click="reloadTasks">刷新</button>-->
-      <!--    <el-button @click="setNewTask">新增任务</el-button>-->
+      <el-button @click="setNewTask">新增任务</el-button>
     </div>
     <div class="taskContainer">
       <div class="task" v-for="task in taskList" :key="task.uid">
@@ -86,7 +86,7 @@ import {getAction, postAction} from '@/network/request';
 import md5 from 'blueimp-md5';
 
 export default {
-  name: 'TaskManagementHome',
+  name: 'TaskRecordHome',
   data(){
     return {
       url: {
