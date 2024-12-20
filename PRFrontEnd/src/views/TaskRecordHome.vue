@@ -5,7 +5,7 @@
       <el-button @click="setNewTask">新增任务</el-button>
     </div>
     <div class="taskContainer">
-      <div class="task" v-for="task in taskList" :key="task.uid">
+      <div class="task" v-for="task in taskList" :key="task.uid" @dblclick="openTaskDetail(task)">
         <input type="checkbox">
         <div style="flex: 1">
           <span>{{ task.taskName }}</span>
@@ -50,6 +50,7 @@
 <!--      </el-table>-->
 <!--    </div>-->
     <el-drawer :visible.sync="showDrawer" direction="rtl" size="70%">
+      <el-button @click="handleTaskSave">保存</el-button>
       <el-form v-model="task" >
         <el-form-item label="任务名称">
           <input v-model="task.taskName"/>
@@ -125,22 +126,22 @@ export default {
       this.getTaskList();
     },
     openTaskDetail(row){
-      this.showDrawer = true;
       getAction(this.url.getTask, {taskUid: row.uuid}).then(res => {
         console.log(res);
         this.task = res.result;
+        this.showDrawer = true;
       });
       console.log(row);
     },
     handleTaskSave(){
-      console.log(this.task);
-      // postAction(this.url.saveTask, this.task).then(res => {
-      //   console.log(res);
-      //   if (res.success){
-      //     this.showDrawer = false;
-      //     this.getTaskList();
-      //   }
-      // });
+      // console.log(this.task);
+      postAction(this.url.saveTask, this.task).then(res => {
+        console.log(res);
+        if (res.success){
+          this.showDrawer = false;
+          this.getTaskList();
+        }
+      });
     },
     handleRemove(row){
       postAction(this.url.removeTask, row.uuid).then(res => {
