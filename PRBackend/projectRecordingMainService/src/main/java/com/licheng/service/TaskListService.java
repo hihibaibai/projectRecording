@@ -1,6 +1,7 @@
 package com.licheng.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.licheng.entity.Task;
@@ -42,6 +43,8 @@ public class TaskListService extends ServiceImpl<TaskMapper, Task> implements IS
 //            return list();
 //        }
         LambdaQueryWrapper<Task> qw = new LambdaQueryWrapper<>();
+        qw.orderByAsc(Task::getSortOrder);
+        qw.orderByDesc(Task::getCreateTime);
 //        qw.eq(Task::getAssignedTo, user.getUserName());
 //        qw.or();
 //        qw.eq(Task::getCreateBy, user.getUserName());

@@ -9,7 +9,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName("PM_TASK_LIST")
+@TableName("PR_TASK")
 public class Task {
 
     @TableId(type = IdType.AUTO, value = "UUID")
@@ -41,5 +41,9 @@ public class Task {
 
     private String taskDetail;
 
+    private Boolean finished = false;
+
     private String memo;
+
+    private Integer sortOrder;
 }
