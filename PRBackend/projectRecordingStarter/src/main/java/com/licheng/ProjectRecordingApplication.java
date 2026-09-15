@@ -4,13 +4,17 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @SpringBootApplication(scanBasePackages = "com.licheng")
 @MapperScan("com.licheng.**.mapper")
+@ComponentScan("com.licheng.**")
+@RestController
 public class ProjectRecordingApplication {
 
     public static void main(String[] args) throws UnknownHostException {
