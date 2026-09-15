@@ -34,6 +34,7 @@ public class Task {
 //    @DateTimeFormat(pattern = "yyyy-MM-ddTHH:mm")
     private Date startTime;
 
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm")
     private Date estimateEndTime;
 
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm")
